@@ -1,0 +1,50 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,300,800);
+
+/* GLOBAL */
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+h2{
+	color: #034694;
+}
+
+.lead{
+	color: #DBA111 !important;
+}
+
+#cntr{
+	text-align: center;
+}
+
+/* NAV */
+
+.navbar-inverse{
+	background-color: #034694;
+	border: #034694;
+	border-radius: 0;
+}
+
+.active>a{
+	background-color: #03254b !important;
+} 
+
+/* HOME */
+
+
+
+/* SQUAD */
+
+thead{
+	background-color: #034694;
+	color: white;
+}
+
+#squad{
+	margin-left: 9%;
+}
+
+/* INFO */
+
+/* FOOTER */

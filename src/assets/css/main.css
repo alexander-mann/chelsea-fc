@@ -28,11 +28,11 @@ h2{
 
 .active>a{
 	background-color: #03254b !important;
-} 
+}
 
-/* HOME */
-
-
+.navbar-brand{
+	color: white !important;
+}
 
 /* SQUAD */
 
@@ -45,6 +45,10 @@ thead{
 	margin-left: 9%;
 }
 
-/* INFO */
-
 /* FOOTER */
+
+.ftr{
+	text-align: center;
+	padding-top: 20px;
+	font-size: 11px;
+}

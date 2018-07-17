@@ -2,28 +2,30 @@
   <h2 id="cntr">Squad</h2>
   <p class="lead" id="cntr">Current Chelsea FC Players</p>
   <div class="col-md-10" id="squad">
-    <div  *ngFor="let manager of data.squad">
-  <p *ngIf="manager.position==null" id="cntr"><strong>Manager:</strong> {{ manager.name }} ({{ manager.nationality }})</p>
-</div>
-  <table class="table table-striped">
-    <thead>
-      <tr>
-        <td>Name</td>
-        <td>Position</td>
-        <td>Date of Birth</td>
-        <td>Country of Birth</td>
-        <td>Nationality</td>
-      </tr>
-    </thead>
-    <tbody *ngFor="let player of data.squad">
-      <tr *ngIf="player.position!=null">
-        <td>{{ player.name }}</td>
-        <td>{{ player.position }}</td>
-        <td>{{ player.dateOfBirth | date:'longDate' }}</td>
-        <td>{{ player.countryOfBirth }}</td>
-        <td>{{ player.nationality }}</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+    <div *ngFor="let manager of data.squad">
+      <p *ngIf="manager.position==null" id="cntr">
+        <strong>Manager:</strong> {{ manager.name }} ({{ manager.nationality }})
+      </p>
+    </div>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <td>Name</td>
+          <td>Position</td>
+          <td>Date of Birth</td>
+          <td>Country of Birth</td>
+          <td>Nationality</td>
+        </tr>
+      </thead>
+      <tbody *ngFor="let player of data.squad">
+        <tr *ngIf="player.position!=null">
+          <td>{{ player.name }}</td>
+          <td>{{ player.position }}</td>
+          <td>{{ player.dateOfBirth | date:'longDate' }}</td>
+          <td>{{ player.countryOfBirth }}</td>
+          <td>{{ player.nationality }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
